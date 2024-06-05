@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.fullscreen-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000; /* Arka plan rengi */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 3; /* Başlangıçta görünür */
+    transition: opacity 4s ease;
+}
+
+.fullscreen-image img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Resme tıklanınca görünmez yap */
+.fullscreen-image.hidden {
+    opacity: 0;
+}
+
+
+.container {
+    height: 100vh;
+    background-size: 100% 100%;
+    /* background-color: rgba(11, 11, 29, 0.733); */
+}
+
+.navbar{
+    background-color: rgba(16, 16, 22, 0.89);
+    width: 100%;
+    height: 17%;
+    border-bottom: groove;
+    border-bottom-width: 1px;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.button-container button {
+    padding: 10px 10px;
+    margin: 0 5px;
+    background-color: rgb(255, 255, 255);
+    color: #a01a1a;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+
+.button-container button:hover {
+    background-color: #a01a1a;
+    color: white;
+}
+
+
+.right {
+    float: left;
+    width: 49%;
+    height: 90%;
+    margin: 0 auto; /* Sağa ve sola yaslanmayı kaldırarak ortalama */
+}
+/* .navbar ul{
+    float: right;
+    margin-right: 5vh;
+} */
+.baslik{
+    text-align: center;
+    padding: 2.5vh;
+}
+.baslik a{
+    text-align: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 4vh;
+    font-family: "Tektur", sans-serif;
+    font-optical-sizing: auto;
+}
+  
+.navbar ul li{
+    font-family: "Tektur", sans-serif;
+    font-optical-sizing: auto;
+    list-style: none;
+    display: inline-block;
+    margin: 0 1vh;
+    line-height: 10vh;
+}
+.navbar ul li a{
+    color: rgb(255, 255, 255);
+    font-family: "Tektur", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 2vw;
+    padding: 6px 13px;
+}
+.navbar ul li a.active,
+.navbar ul li a:hover{
+    background-color: orange;
+    border-radius: 2px;
+    transition: 0.5s;
+}
+
+.left{
+    width: 50%;
+    float: left;
+    height: 90%;
+    border-right: groove;
+    border-right-width: 1px;
+    border-color: black;
+    /* overflow-x: auto; */
+}
+div.left .buttons{
+    margin: 5px 10%;
+    height: 95%;
+}
+.left h3{
+    padding: 10px 0 0 0;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+.right{
+    float: left;
+    width: 49%;
+    height: 90%;
+}
+.right h3{
+    padding: 10px 0 0 0;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+div.right .result{
+    margin: 4px 2%;
+    height: 500px;
+
+}
+.lower{
+    height: 100%;
+    width: 100%;
+    border-top: groove;
+    border-top-width: 1px;
+    border-color: #000;
+    background-color: rgba(13, 13, 20, 0.733);
+}
+.finally{
+    width: 100%;
+    margin: 2% 0 0 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    display: inline-block;
+    color: black;
+    
+}
+.btn-biyoloji {
+    margin: 1px;
+    border: none;
+    color: #a01a1a;
+    background-color: rgb(255, 255, 255);
+    padding: 2% 20%;
+    cursor: pointer;
+    border: 3px solid rgb(255, 255, 255);
+    -moz-border-radius: 16px;
+    -webkit-border-radius: 16px;
+    border-radius: 16px;
+    float: left;
+    clear: both;
+    
+}
+.btn-biyoloji:hover {
+    color: white;
+    background-color: #a01a1a;
+    border: 5px solid #a01a1a;
+}
